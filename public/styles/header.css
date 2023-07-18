@@ -1,0 +1,26 @@
+header{
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-end; */
+  flex-direction: column; 
+  
+  height: 400px;
+  width: 100%;
+  
+  background-color: #1f4500;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+ 
+
+}
+
+header .profilePhoto{
+  width: 8em; 
+  height: 8em;
+  margin-top: 130px;
+}
+
+header h2{
+  color: goldenrod;
+
+}
