@@ -7,8 +7,18 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
 
+     <!-- normalize CSS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+3:ital,wght@1,300;1,600&display=swap" rel="stylesheet">
+ 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -17,13 +27,61 @@
     <script type="text/javascript" src="/scripts/client.js"></script>
   </head>
 
+
+
+
   <body>
-    <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
-    </nav>
+
+
+    <!-- Top nav bar  -->
+  <nav>
+      
+    
+      <span >tweeter</span>
+    
+    <!-- top Right side -->
+    <div class="topRight">
+      <span><b>Write</b> a new tweet</span>
+      <i class="fa-solid fa-angles-down"></i>
+    </div>
+    
+
+  </nav>
+
+
+   <!-- Top header  -->
+<header>
+  
+      <img class="profilePhoto" src="/images/profile-hex.png"> 
+ 
+  
+   
+      <h2><b>Amy</b> Mansell</h2>
+    
+</header>
 
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form action="/tweets" method="post">
+           
+          <div class="container-top">
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          </div>
+          <div class="container-middle">   
+          </div>
+          <div class="container-bottom">
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+
+
+        </form>
+      </section>
+
+    </main>
   </body>
 </html>
