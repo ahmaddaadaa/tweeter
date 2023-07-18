@@ -1,0 +1,50 @@
+main form{
+  display: flex;
+  flex-direction: column;
+  
+  
+  
+  }
+  
+  main form button{
+  background-color: #4056A1;
+  font-family: 'Bungee', cursive;
+  color: white;
+  
+  } 
+
+  #tweet-text{
+  width: 85%;
+  margin-top: 6px;
+  background-color: transparent;
+  } 
+
+  main .container-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  main .container-middle{
+    border: none;
+    border-top: 1px solid black;
+  }
+
+   main .counter{
+    margin-right:0.5em ;
+    font-weight: bold;
+   }
+   main .container-bottom{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } 
+  
+  main label{
+    font-weight: bold;
+  }
+
+  main textarea{
+    border: initial;
+  } 
