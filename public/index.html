@@ -19,13 +19,21 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+
+    <!-- App JQ -->
+    <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
+
+
   </head>
+
+  
 
 
 
@@ -50,7 +58,7 @@
 
 
    <!-- Top header  -->
-<header>
+<header class="top-header">
   
       <img class="profilePhoto" src="/images/profile-hex.png"> 
  
@@ -65,7 +73,7 @@
 
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form action="/tweets" method="post">
+        <form class="new-tweet-form" action="/tweets" method="post">
            
           <div class="container-top">
           <label for="tweet-text">What are you humming about?</label>
@@ -74,7 +82,7 @@
           <div class="container-middle">   
           </div>
           <div class="container-bottom">
-            <button type="submit">Tweet</button>
+            <button id='btn' type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
 
@@ -82,6 +90,33 @@
         </form>
       </section>
 
+    <section class="tweet-container">
+      <article>
+
+        <header>
+          <div class="picAndUsername">
+          <i class="fa-solid fa-circle-user"></i>
+          <h3>username</h3>
+        </div>
+          <h3>@tagName</h3>
+        </header>
+
+        <p>my new tweet message</p>
+
+        <footer>
+          <p>10 days ago</p>
+
+          <div><i class="fa-solid fa-flag"></i>
+            <i class="fa-solid fa-share"></i>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+        </footer>
+
+      </article>
+    </section>
+
     </main>
+    
   </body>
 </html>
