@@ -1,67 +1,80 @@
+#all-tweets {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .tweet-container {
   display: flex;
   flex-direction: column;
   border: 1px solid black;
   padding: 10px;
-  margin-top: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   transition: box-shadow 0.3s ease;
 }
 
-.tweet-container header{
+.tweet-container article {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
+.tweet-container header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 30px;
   width: 100%;
-  
+}
 
-} 
-
-
-
-.picAndUsername{
+.picAndUsername {
   display: flex;
   align-items: center;
   width: 40%;
   height: 30px;
-  } 
+}
 
-  .picAndUsername > i{
-   margin-right: 10px;
-  }
+.picAndUsername > i {
+  margin-right: 10px;
+}
 
-  .tweet-container > p{
-    display: flex;
-   
-  }
+.tweet-container > p {
+  display: flex;
+}
 
-
-.tweet-container footer{
+.tweet-container footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 30px;
   width: 100%;
   border-top: 1px solid black;
+}
 
-}  
-
-.tweet-container footer div{
+.tweet-container footer div {
   display: flex;
   justify-content: space-between;
   width: 15%;
   margin-top: 10px;
 }
 
-footer div i{
+footer div i {
   transition: color 0.3s ease;
 }
 
-footer div i:hover{
-  color: #1f4500;
+footer div i:hover {
+  color: goldenrod;
 }
 
 .tweet-container:hover {
-box-shadow: 4px 4px 8px #1f4500;
+  box-shadow: 4px 4px 8px #1f4500;
+}
+
+#alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F4C2C2;
+  color: red;
+  box-shadow: none; /* Override the transition for the #alert element */
 }
