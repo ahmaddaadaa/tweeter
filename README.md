@@ -6,11 +6,11 @@ I have implemented a responsive design to ensure the project adapt and display c
 
 ## Final Product
 
-### main page:
+### Screen with  (min-width: 960px):
 ***
 !["homepage: (max-width: 960px)"](https://github.com/ahmaddaadaa/tweeter/blob/master/docs/displayOne.png?raw=true)
 ***
-### Registeration page:
+### Screen with  (max-width: 960px):
 ***
 !["homepage: (min-width: 960px)"](https://github.com/ahmaddaadaa/tweeter/blob/master/docs/displayTwo.png?raw=true)
 ***
