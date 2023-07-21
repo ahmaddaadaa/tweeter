@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <!-- Meta Information -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    
     <title>Tweeter - Home Page</title>
 
     <!-- External CSS -->
@@ -23,100 +25,67 @@
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!-- timeago  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
-
-    <!-- App JQ -->
     <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
+    
 
 
   </head>
-
-  
-
-
 
 
   <body>
 
 
-    <!-- Top nav bar  -->
-  <nav>
-      
-    
-      <span >tweeter</span>
-    
-    <!-- top Right side -->
-    <div class="topRight">
-      <span><b>Write</b> a new tweet</span>
-      <i class="fa-solid fa-angles-down"></i>
-    </div>
-    
-
-  </nav>
-
-
-   <!-- Top header  -->
-<header class="top-header">
-  
-      <img class="profilePhoto" src="/images/profile-hex.png"> 
- 
-  
-   
-      <h2><b>Amy</b> Mansell</h2>
-    
-</header>
-
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-
-      <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form class="new-tweet-form" action="/tweets" method="post">
-           
-          <div class="container-top">
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text"></textarea>
-          </div>
-          <div class="container-middle">   
-          </div>
-          <div class="container-bottom">
-            <button id='btn' type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-
-
-        </form>
-      </section>
-
-    <section class="tweet-container">
-      <article>
-
-        <header>
-          <div class="picAndUsername">
-          <i class="fa-solid fa-circle-user"></i>
-          <h3>username</h3>
+      <!-- Top nav bar  -->
+    <nav>
+        <span >tweeter</span>
+        <!-- top Right side -->
+        <div class="topRight">
+          <span><b>Write</b> a new tweet</span>
+          <i class="fa-solid fa-angles-down"></i>
         </div>
-          <h3>@tagName</h3>
-        </header>
+    </nav>
 
-        <p>my new tweet message</p>
+    <div class="responsive">
+      <!-- Top header  -->
+      <div class="side-box">
+          <header class="top-header">
+            <img class="profilePhoto" src="/images/profile-hex.png"> 
+            <h2><b>Amy</b> Mansell</h2>
+          </header>
+      </div>
 
-        <footer>
-          <p>10 days ago</p>
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <div>
+          <section class="new-tweet">
+            <h2>Compose Tweet</h2>
+            <form class="new-tweet-form" action="/tweets" method="post">
+              <div class="container-top">
+                <label for="tweet-text">What are you humming about?</label>
+                <textarea name="text" id="tweet-text"></textarea>
+              </div>
+              <div class="container-middle"></div>
+              <div class="container-bottom">
+                <button id='btn' type="submit">Tweet</button>
+                <output name="counter" class="counter" for="tweet-text">140</output>
+              </div>
+            </form>
+          </section>
+      </div>
+      
+      <section id ="alert" class="tweet-container"></section>
+      <div id="all-tweets"></div>
 
-          <div><i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-share"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-
-        </footer>
-
-      </article>
-    </section>
-
-    </main>
-    
+      </main>
+    </div>
+      
   </body>
 </html>
