@@ -34,11 +34,11 @@
   height: 30px;
 }
 
-.picAndUsername > i {
+.picAndUsername>i {
   margin-right: 10px;
 }
 
-.tweet-container > p {
+.tweet-container>p {
   display: flex;
 }
 
@@ -76,5 +76,6 @@ footer div i:hover {
   justify-content: center;
   background-color: #F4C2C2;
   color: red;
-  box-shadow: none; /* Override the transition for the #alert element */
+  box-shadow: none;
+  /* Override the transition for the #alert element */
 }

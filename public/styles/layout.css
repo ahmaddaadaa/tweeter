@@ -6,7 +6,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -17,37 +20,37 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
-  font-family: 'Source Sans 3'; 
+  font-family: 'Source Sans 3';
   font-size: 24px;
-  
+
 }
 
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
- @media only screen and (max-width: 960px) {
- body main{
-  display: flex;
-  align-items: center;
-  align-items: stretch;
-  justify-content: space-between;
-  flex-direction: column;
-  width: 90%;
-  margin: 0 auto;
-  
- 
+@media only screen and (max-width: 960px) {
+  body main {
+    display: flex;
+    align-items: center;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+
+
+  }
 }
- }
 
 /* Laptops / Desktops: minimum width of 960px */
 @media only screen and (min-width: 960px) {
   /* Write CSS rules that target small laptop screen sizes and beyond */
 
-  .responsive{
+  .responsive {
     display: flex;
     flex-direction: row;
-    
+
 
   }
 
@@ -56,58 +59,58 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     height: 120px;
     width: 100%;
     background-color: #4056A1;
-    color:#FFFFFF;
+    color: #FFFFFF;
     padding: 0 1.5em;
   }
 
-  .top-header{
+  .top-header {
     display: flex;
     align-items: flex-start;
 
-    flex-direction: column; 
+    flex-direction: column;
 
     /* Setting top, right, bottom, and left margins */
     margin: 1.5em 1.5em 1.5em 1.5em;
 
-   
+
     width: 15em;
-    
+
     background-color: #1f4500;
     background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-   
-  
+
+
   }
 
-    
-  .top-header img{
-    width: 8em; 
+
+  .top-header img {
+    width: 8em;
     height: 8em;
     /* Setting top, right, bottom, and left margins */
     margin: 3.5em 1.5em 0em 3.5em !important;
   }
 
-  header h2{
+  header h2 {
     color: goldenrod;
     margin-left: 2.2em !important;
 
   }
 
-  .responsive main{
+  .responsive main {
     margin-right: 1em;
     max-width: 50%;
   }
 
- .tweet-container p{
-  word-wrap: break-word;
-  
- }
+  .tweet-container p {
+    word-wrap: break-word;
 
- .side-box{
-  margin-right: 1vw;
- }
+  }
+
+  .side-box {
+    margin-right: 1vw;
+  }
 }

@@ -1,29 +1,29 @@
-
 @media only screen and (max-width: 960px) {
-.top-header{
-  display: flex;
-  align-items: center;
-  /* justify-content: flex-end; */
-  flex-direction: column; 
-  
-  height: 400px;
-  width: 100%;
-  
-  background-color: #1f4500;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
- 
+  .top-header {
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; */
+    flex-direction: column;
 
-}}
+    height: 400px;
+    width: 100%;
 
-header .profilePhoto{
-  width: 8em; 
-  height: 8em;
-  margin: 1.5rem;
- 
+    background-color: #1f4500;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+
+  }
 }
 
-header h2{
+header .profilePhoto {
+  width: 8em;
+  height: 8em;
+  margin: 1.5rem;
+
+}
+
+header h2 {
   color: goldenrod;
 
 }

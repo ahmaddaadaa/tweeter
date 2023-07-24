@@ -1,36 +1,37 @@
 @media only screen and (max-width: 960px) {
-nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  height: 120px;
-  width: 100%;
-  background-color: transparent;
-  color:#FFFFFF;
-  padding: 0 1.5em;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 120px;
+    width: 100%;
+    background-color: transparent;
+    color: #FFFFFF;
+    padding: 0 1.5em;
 
 
-}}
+  }
+}
 
-nav > span{
+nav>span {
   font-family: 'Bungee', cursive;
   margin-top: 80px;
 }
 
 
-nav .topRight{
+nav .topRight {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   margin-top: 1em;
-  
-  
- 
-  
+
+
+
+
 
 }
 
-.fa-angles-down{
+.fa-angles-down {
   color: red;
 }
