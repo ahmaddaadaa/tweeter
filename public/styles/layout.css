@@ -50,6 +50,7 @@ body {
   .responsive {
     display: flex;
     flex-direction: row;
+    max-width: 90%;
 
 
   }
